@@ -1,5 +1,7 @@
-def ola_mundo():
-    print(f"Olá, projeto integrador 3")
+import requests
 
-if __name__ == "_main_":
-    ola_mundo
+def ola_mundo():
+    response = requests.get("https://api.github.com")
+    return f"Olá, turma! API Status: {response }
+if __name__ == "__main__":
+    ola_mundo()
